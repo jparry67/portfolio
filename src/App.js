@@ -1,10 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Switch, Route } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import About from './components/About';
+import Education from './components/Education';
+import Experience from './components/Experience';
+import Portfolio from './components/Portfolio';
+import Skills from './components/Skills';
 
 function App() {
   return (
-    <div className="App">
+    <main style={appStyles}>
+      <Navigation />
+      <Switch>
+        <Route path="/about" component={About} exact />
+        <Route path="/education" component={Education} />
+        <Route path="/experience" component={Experience} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/skills" component={Skills} />
+      </Switch>
+    </main>
+/*    <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,8 +36,13 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div>  */
   );
 }
+
+const appStyles={
+  display: 'grid',
+  gridTemplateColumns: 'auto 1fr',
+};
 
 export default App;

@@ -1,0 +1,31 @@
+.nav-sidebar {
+  height: 100vh;
+  background-color: #232323;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile {
+  margin: 0 auto;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: #676767;
+}
+
+.links {
+  margin: 70px;
+  display: grid;
+  grid-gap: 30px;
+  font-size: 20px;
+}
+
+.link {
+  color: #bcbcbc;
+}
+
+.active {
+  color: #234567;
+}
