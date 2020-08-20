@@ -9,10 +9,18 @@
 
 .profile {
   margin: 0 auto;
-  height: 130px;
-  width: 130px;
+  height: 140px;
+  width: 140px;
   border-radius: 50%;
   background-color: #676767;
+  display: grid;
+  place-items: center;
+}
+
+img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
 }
 
 .links {
@@ -24,8 +32,11 @@
 
 .link {
   color: #bcbcbc;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .active {
-  color: #234567;
+  color: #3380ff;
 }

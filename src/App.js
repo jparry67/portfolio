@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import About from './components/About';
 import Education from './components/Education';
@@ -19,6 +19,7 @@ function App() {
         <Route path="/experience" component={Experience} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/skills" component={Skills} />
+        <Redirect from="/*" to="/about" />
       </Switch>
     </main>
 /*    <div className="App">

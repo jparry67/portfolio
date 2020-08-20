@@ -1,18 +1,20 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navigation.css';
+import jacob_parry from '../jacob_parry.jpeg';
 
 function Navigation() {
   return (
     <div className="nav-sidebar">
       <div className="profile">
+        <img src={jacob_parry} />
       </div>
       <div className="links">
-        <Link className="link" to="/about">About</Link>
-        <Link className="link" to="/education">Education</Link>
-        <Link className="link" to="/experience">Experience</Link>
-        <Link className="link" to="/portfolio">Portfolio</Link>
-        <Link className="link" to="/skills">Skills</Link>
+        <NavLink activeClassName="active" className="link" to="/about">About</NavLink>
+        <NavLink className="link" to="/education">Education</NavLink>
+        <NavLink className="link" to="/experience">Experience</NavLink>
+        <NavLink className="link" to="/portfolio">Portfolio</NavLink>
+        <NavLink className="link" to="/skills">Skills</NavLink>
       </div>
     </div>
   );

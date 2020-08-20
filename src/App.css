@@ -2,6 +2,10 @@
   box-sizing: border-box;
 } 
 
+.page {
+  padding: 50px;
+}
+
 .App {
   text-align: center;
 }

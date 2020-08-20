@@ -2,7 +2,9 @@ import React from "react";
 
 function Education() {
   return (
-    <h1>Education</h1>
+    <div className="page">
+      <h1>Education</h1>
+    </div>
   );
 }
 
